@@ -1043,7 +1043,7 @@
                             </div>
                             <!-- /.panel-heading -->
                             <div class="panel-body no-padding rounded-bottom">
-                                <form action="#" class="form-horizontal form-bordered">
+                                <form action="#" class="form-horizontal form-padding">
                                     <div class="form-body">
                                         <div class="form-group">
                                             <label class="col-sm-3 control-label" for="DOSSIER">DOSSIER</label>
@@ -1105,46 +1105,61 @@
                             </div>
                             <div class="panel-body no-padding rounded-bottom">
                                 <div class="" id="">
-                                    <form action="#" class="form-horizontal form-bordered">
+                                    <form action="#" class="form-horizontal form-padding">
                                         <div class="form-group">
                                             <div class="sex-switcher">
                                                 <label class="col-sm-2 text-center">
                                                     <!-- Switch between M/Mme -->
                                                 </label>
-                                                <div class="col-sm-10 ">
+                                                <div class="col-sm-5 ">
+                                                    <input type="checkbox" class="switch" name="switch" checked data-on-text="M" data-off-text="Mme" data-on-color="teal">
+                                                </div>
+                                                <div class="col-sm-5 ">
                                                     <input type="checkbox" class="switch" name="switch" checked data-on-text="M" data-off-text="Mme" data-on-color="teal">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-body">
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label" for="Mnome">Nom</label>
-                                                <div class="col-sm-10">
-                                                    <input class="form-control" type="text" placeholder="" id="Mnome">
+                                                <label class="col-sm-2 control-label">Nome</label>
+                                                <div class="col-sm-5">
+                                                    <input class="form-control" type="text" value="Mr/Mme" paceholder="">
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <input class="form-control" type="text" value="Mr/Mme">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label" for="Mage">Age</label>
-                                                <div class="col-sm-10">
-                                                    <input class="form-control" type="text" placeholder="" id="Mage">
+                                                <label class="col-sm-2 control-label">Age</label>
+                                                <div class="col-sm-5">
+                                                    <input class="form-control" type="text" value="Mr/Mme" paceholder="">
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <input class="form-control" type="text" value="Mr/Mme">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label" for="MaAdresse">Adresse</label>
+                                                <label class="col-sm-2 control-label">Adresse</label>
                                                 <div class="col-sm-10">
-                                                    <input class="form-control" type="text" id="MaAdresse">
+                                                    <input class="form-control" type="text">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label" for="Memail">Email</label>
-                                                <div class="col-sm-10">
-                                                    <input class="form-control" type="email" placeholder="" id="Memail">
+                                                <label class="col-sm-2 control-label">Email</label>
+                                                <div class="col-sm-5">
+                                                    <input class="form-control" type="text" value="" paceholder="">
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <input class="form-control" type="text" value="">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-sm-2 control-label" for="Mtel">Tel.</label>
-                                                <div class="col-sm-10">
-                                                    <input class="form-control" type="tel" placeholder="" id="Mtel">
+                                                <label class="col-sm-2 control-label">Tel.</label>
+                                                <div class="col-sm-5">
+                                                    <input class="form-control" type="text" value="" paceholder="">
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <input class="form-control" type="text" value="">
                                                 </div>
                                             </div>
                                             <div class="form-group pl-20">
@@ -1249,7 +1264,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="panel-body no-padding rounded-bottom">
-                                <form action="#" class="form-horizontal form-bordered">
+                                <form action="#" class="form-horizontal form-padding">
                                     <div class="form-body">
                                         <!-- /.panel-heading -->
                                         <div class="panel-body no-padding">
@@ -1534,8 +1549,19 @@
                                                                         </div>
                                                                     </div>
                                                                 </th>
-                                                                <!-- <th>M/Mme</th> -->
-                                                                <th>Situation antérieure</th>
+                                                                <<th>
+                                                                    <div class="form-group">
+                                                                        <div class="sex-switcher">
+                                                                            <label class="col-sm-2 text-center">
+                                                                                <!-- Switch between M/Mme -->
+                                                                            </label>
+                                                                            <div class="col-sm-10 ">
+                                                                                <input type="checkbox" class="switch" name="switch" checked data-on-text="M" data-off-text="Mme" data-on-color="teal">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </th>
+                                                                    <th>Situation antérieure</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -1546,9 +1572,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
@@ -1560,9 +1586,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
@@ -1574,9 +1600,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
@@ -1588,9 +1614,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
@@ -1602,9 +1628,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
@@ -1616,9 +1642,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
@@ -1630,9 +1656,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
@@ -1644,9 +1670,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
@@ -1658,9 +1684,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td rowspan="2" class="text-center">Solutions mises en place :</td>
                                                             </tr>
                                                             <tr>
@@ -1670,9 +1696,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <!-- <td>___</td> -->
                                                             </tr>
                                                             <tr>
@@ -1682,9 +1708,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <td rowspan="3">
                                                                     <textarea class="form-control" rows="5"></textarea>
                                                                 </td>
@@ -1696,9 +1722,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <!-- <td>___</td> -->
                                                             </tr>
                                                             <tr>
@@ -1708,9 +1734,9 @@
                                                                 <td>
                                                                     <input class="form-control" type="text">
                                                                 </td>
-                                                                <!-- <td>
-                                                                        <input class="form-control" type="text">
-                                                                    </td> -->
+                                                                <td>
+                                                                    <input class="form-control" type="text">
+                                                                </td>
                                                                 <!-- <td>___</td> -->
                                                             </tr>
                                                         </tbody>
@@ -1953,7 +1979,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="panel-body no-padding rounded-bottom">
-                                <form action="#" class="form-horizontal form-bordered">
+                                <form action="#" class="form-horizontal form-padding">
                                     <div class="form-body">
                                         <!-- /.panel-heading -->
                                         <div class="panel-body no-padding">
@@ -2298,7 +2324,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="panel-body no-padding rounded-bottom">
-                                <form action="#" class="form-horizontal form-bordered">
+                                <form action="#" class="form-horizontal form-padding">
                                     <div class="form-body">
                                         <!-- /.panel-heading -->
                                         <div class="panel-body no-padding">
@@ -2424,7 +2450,7 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <form action="#" class="form-horizontal form-bordered">
+                                        <form action="#" class="form-horizontal form-padding">
                                             <div class="form-body">
                                                 <form action="#">
                                                     <div class="form-group">
@@ -2493,7 +2519,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="panel-body no-padding rounded-bottom">
-                                <form action="#" class="form-horizontal form-bordered">
+                                <form action="#" class="form-horizontal form-padding">
                                     <div class="form-body">
                                         <!-- /.panel-heading -->
                                         <div class="row">
@@ -2502,7 +2528,7 @@
                                             <div class="col-md-6"></div>
                                         </div>
                                         <div class="form-holder">
-                                            <form action="#" class="form-horizontal form-bordered">
+                                            <form action="#" class="form-horizontal form-padding">
                                                 <div class="form-body">
                                                     <form action="#">
                                                         <div class="form-group">
@@ -2813,7 +2839,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <div class="panel-body no-padding rounded-bottom">
-                                <form action="#" class="form-horizontal form-bordered">
+                                <form action="#" class="form-horizontal form-padding">
                                     <div class="form-body">
                                         <div class="row">
                                             <div class="col-md-12">

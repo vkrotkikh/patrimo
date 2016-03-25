@@ -65,9 +65,7 @@ textarea {
     resize: vertical;
 }
 
-.form-bordered .form-group {
-    border-top: none; 
-}
+
 
 
 /*.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
@@ -278,7 +276,7 @@ body.page-sidebar-minimize-auto .navbar-minimize a:hover {
 
 /*Sex switcher*/
 
-.sex-switcher {}
+
 
 .sex-switcher .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-teal, .sex-switcher .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-teal, .sex-switcher .bootstrap-switch .bootstrap-switch-label.bootstrap-switch-teal {
     background: silver!important;
@@ -296,4 +294,17 @@ body.page-sidebar-minimize-auto .navbar-minimize a:hover {
 .sex-switcher .bootstrap-switch .bootstrap-switch-handle-on, .sex-switcher .bootstrap-switch .bootstrap-switch-handle-off, .sex-switcher .bootstrap-switch .bootstrap-switch-label {
     line-height: 15px !important;
     font-size: 15px !important;
+}
+
+/*FORMS*/
+
+.form-padding .form-body {
+  padding: 0px;
+}
+.form-padding .form-group {
+  padding: 15px 0px;
+  margin-bottom: 0px;
+}
+.form-padding .form-group .chosen-container:last-child {
+  margin-bottom: 0px !important;
 }
