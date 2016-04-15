@@ -30,6 +30,35 @@ table.table-striped .form-control {
 .table-holder {
   overflow-x: auto;
 }
+.table-secondary thead tr th,
+.table-secondary tfoot tr th {
+  background-color: #A90329 !important;
+  border-color: #c2032f #c2032f #860220 !important;
+  color: #fff;
+}
+.table-secondary tfoot tr th {
+  border-color: #860220 #c2032f #c2032f !important;
+}
+.table-icon .fa {
+  float: right;
+  margin-top: 3px;
+}
+.pagination-wrapper {
+  overflow: hidden;
+  padding: 10px 0;
+  margin-top: 69px;
+  border-top: 1px solid #ddd;
+}
+.pagination-wrapper .pagination {
+  float: right;
+  margin: 0;
+}
+.pagination-wrapper.-mt-65 {
+  margin-top: 65px;
+}
+.pagination > li > a {
+  color: #A90329;
+}
 a,
 a:active {
   color: #00acdc;
@@ -45,8 +74,8 @@ textarea {
   border-bottom: 0;
 }
 .btn-theme {
-  background-color: #a90329;
-  border-color: #a90329;
+  background-color: #A90329;
+  border-color: #A90329;
   color: white;
 }
 .btn-theme:hover,
@@ -58,25 +87,26 @@ textarea {
   background-color: #05a0cb;
 }
 input:focus,
-textarea:focus {
-  border: 1px solid #00acdc !important;
+textarea:focus,
+select:focus {
+  border: 1px solid #A90329 !important;
 }
 body.page-sidebar-minimize #header .navbar-minimize > a {
-  background: #a90329;
+  background: #A90329;
 }
 body.page-sidebar-minimize #header .navbar-minimize:hover > a {
-  background-color: #a90329;
+  background-color: #A90329;
 }
 body.page-sidebar-minimize .navbar-minimize {
-  border-right: 1px solid #a90329 !important;
+  border-right: 1px solid #A90329 !important;
 }
 body.page-sidebar-minimize .navbar-minimize a {
-  background-color: #a90329;
-  border-bottom: 1px solid #a90329;
+  background-color: #A90329;
+  border-bottom: 1px solid #A90329;
 }
 body.page-sidebar-minimize .navbar-minimize a:hover {
-  background-color: #a90329;
-  border-bottom: 1px solid #a90329;
+  background-color: #A90329;
+  border-bottom: 1px solid #A90329;
 }
 body.page-sidebar-minimize-auto .navbar-minimize {
   border-right: 1px solid #00acdc !important;
@@ -96,7 +126,7 @@ body.page-sidebar-minimize-auto .navbar-minimize a:hover {
   border: 2px solid #00acdc;
 }
 #sidebar-left.sidebar-circle .sidebar-menu > li.active > a > .icon i {
-  background-color: #a90329;
+  background-color: #A90329;
   color: #fff;
 }
 #back-top:hover {
@@ -128,8 +158,6 @@ body.page-sidebar-minimize-auto .navbar-minimize a:hover {
   background-color: #00acdc;
 }
 #sidebar-left.sidebar-box .sidebar-menu > li > ul > li:hover:after {
-  -webkit-box-shadow: 0 0 0 5px #0480a2;
-  -moz-box-shadow: 0 0 0 5px #0480a2;
   box-shadow: 0 0 0 5px #0480a2;
 }
 #sidebar-left.sidebar-rounded .sidebar-content img {
@@ -139,20 +167,16 @@ body.page-sidebar-minimize-auto .navbar-minimize a:hover {
   background-color: #00acdc;
 }
 #sidebar-left.sidebar-rounded .sidebar-menu > li > ul > li:hover:after {
-  -webkit-box-shadow: 0 0 0 5px #0480a2;
-  -moz-box-shadow: 0 0 0 5px #0480a2;
   box-shadow: 0 0 0 5px #0480a2;
 }
 #sidebar-left.sidebar-circle .sidebar-content img {
   border: 2px solid #00acdc;
 }
 #sidebar-left.sidebar-circle .sidebar-menu > li.active > a > .icon i {
-  background-color: #a90329;
+  background-color: #A90329;
   color: #fff;
 }
 #sidebar-left.sidebar-circle .sidebar-menu > li > ul > li:hover:after {
-  -webkit-box-shadow: 0 0 0 5px #0480a2;
-  -moz-box-shadow: 0 0 0 5px #0480a2;
   box-shadow: 0 0 0 5px #0480a2;
 }
 body.page-sidebar-minimize #sidebar-left .sidebar-menu > li:hover > a .icon i,
@@ -281,8 +305,6 @@ body.page-sidebar-minimize #sidebar-left .sidebar-menu > li.active:hover {
 .sidebar-box .sidebar-menu > li > ul > li:after,
 .sidebar-rounded .sidebar-menu > li > ul > li:after,
 .sidebar-circle .sidebar-menu > li > ul > li:after {
-  -moz-box-shadow: 0 0 0 2px #777;
-  -webkit-box-shadow: 0 0 0 2px #777;
   box-shadow: 0 0 0 2px #777;
 }
 .rdio-theme input[type=radio]:checked + label::after {
@@ -319,8 +341,6 @@ body.page-sidebar-minimize #sidebar-left .sidebar-menu > li.active:hover {
 }
 .panel-heading {
   margin-bottom: 10px;
-  -webkit-box-shadow: 0px 10px 5px 0px #dddddd;
-  -moz-box-shadow: 0px 10px 5px 0px #dddddd;
   box-shadow: 0px 10px 5px 0px #dddddd;
 }
 .panel-title {
@@ -410,3 +430,128 @@ body.page-sidebar-minimize #sidebar-left .sidebar-menu > li.active:hover {
 .form-padding .form-padding .form-group .chosen-container:last-child {
   margin-bottom: 0px !important;
 }
+.ckbox-primary input[type=checkbox]:checked + label::after {
+  background-color: #A90329;
+}
+.ckbox-input-wrp {
+  display: inline-block;
+  width: 60%;
+  vertical-align: bottom;
+  margin-left: 20px;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.btn-custom {
+  border-color: #A90329;
+}
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #ddd;
+}
+.btn-primary {
+  background-color: #A90329;
+  border-color: #A90329;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #db0435;
+  border-color: #db0435;
+}
+.btn-with-icon {
+  margin-right: 15px;
+}
+.btn-with-icon .fa {
+  margin-right: 10px;
+}
+.add-something {
+  font-size: 36px;
+}
+.navbar-toolbar .navbar-right .dropdown .add-something {
+  padding: 0;
+  margin: 10px 20px 0 0;
+}
+.border-top {
+  padding-top: 10px;
+  margin-top: 43px;
+  border-top: 1px solid #ddd;
+}
+.panel-heading {
+  box-shadow: none;
+}
+.panel .panel-body {
+  padding: 10px 4px 10px 17px;
+}
+.panel-tab .panel-body .tab-content .tab-pane > h4 {
+  margin-bottom: 18px;
+}
+.form-bordered label {
+  font-size: 14px;
+}
+.table-striped {
+  padding: 14px 0 15px;
+}
+.table-striped h4 {
+  font-size: 14px;
+  margin: 0 0 20px 14px;
+}
+.text-center .ckbox {
+  margin-right: 0;
+}
+.table.-indent > tbody > tr > td,
+.table.-indent > tbody > tr > th,
+.table.-indent > tfoot > tr > td,
+.table.-indent > tfoot > tr > th,
+.table.-indent > thead > tr > td,
+.table.-indent > thead > tr > th {
+  padding: 8px 8px 8px 17px;
+  vertical-align: middle;
+}
+.form-horizontal .control-label {
+  text-align: center;
+  font-size: 14px;
+}
+.form-horizontal.-indent .form-group {
+  margin-bottom: 27px;
+}
+.form-horizontal.-indent .form-group.mb-21 {
+  margin-bottom: 21px;
+}
+.form-horizontal.-custom {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.form-horizontal.-custom .control-label {
+  text-align: left;
+  padding-left: 20px;
+}
+.form-horizontal.-custom .ckbox,
+.form-horizontal.-custom .rdio {
+  margin-top: 11px;
+  font-size: 14px;
+}
+.form-horizontal.-custom .ckbox:first-child {
+  margin-top: 8px;
+}
+.label-heading {
+  padding-left: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.m-0 {
+  margin: 0;
+}
+.-mb-29 {
+  margin-bottom: 29px;
+}
+form .form-group .control-label {
+  margin: 0;
+}
+textarea.form-control {
+  height: 86px;
+}
+
+/*# sourceMappingURL=custom.css.map */

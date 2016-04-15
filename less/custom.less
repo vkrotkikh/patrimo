@@ -22,6 +22,7 @@ table {
 // .table-striped .form-control {
 //     background: transparent;
 // }
+
 table .form-control {
     border: 1px solid transparent;
     background: rgb(251, 251, 251);
@@ -58,6 +59,44 @@ table.table-striped {
     overflow-x: auto;
 }
 
+.table-secondary thead tr th,
+.table-secondary tfoot tr th {
+    background-color: #A90329 !important;
+    border-color: #c2032f #c2032f #860220 !important;
+    color: #fff;
+}
+
+.table-secondary tfoot tr th {
+    border-color: #860220 #c2032f #c2032f !important;
+}
+
+.table-icon {
+
+    .fa {
+        float: right;
+        margin-top: 3px;
+    }
+}
+
+.pagination-wrapper {
+    overflow: hidden;
+    padding: 10px 0;
+    margin-top: 69px;
+    border-top: 1px solid #ddd;
+
+    .pagination {
+        float: right;
+        margin: 0;
+    }
+
+    &.-mt-65 {
+        margin-top: 65px;
+    }
+}
+.pagination > li > a {
+    color: #A90329;
+}
+
 a,
 a:active {
     color: #00acdc;
@@ -91,9 +130,12 @@ textarea {
     background-color: #05a0cb;
 }
 
-input:focus,
-textarea:focus {
-    border: 1px solid #00acdc !important;
+input,
+textarea,
+select {
+    &:focus {
+        border: 1px solid #A90329 !important;
+    }
 }
 
 body.page-sidebar-minimize {
@@ -592,4 +634,159 @@ body.page-sidebar-minimize #sidebar-left .sidebar-menu > li.active:hover {
     .form-padding .form-group .chosen-container:last-child {
         margin-bottom: 0px !important;
     }
+}
+
+.ckbox-primary input[type=checkbox]:checked + label::after {
+    background-color: @bgRed;
+}
+
+.ckbox-input-wrp {
+    display: inline-block;
+    width: 60%;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+
+.float-left     {float: left;}
+.float-right    {float: right;}
+
+.btn-custom {
+    border-color: @bgRed;
+
+    &:hover,
+    &:focus {
+        background-color: #ddd;
+    }
+}
+
+.btn-primary {
+    background-color: @bgRed;
+    border-color: @bgRed;
+
+    &:hover,
+    &:focus {
+        background-color: lighten(@bgRed, 10%);
+        border-color: lighten(@bgRed, 10%);
+    }
+}
+
+.btn-with-icon {
+    margin-right: 15px;
+
+    .fa {
+        margin-right: 10px;
+    }
+}
+
+.add-something {
+    font-size: 36px;
+}
+
+.navbar-toolbar .navbar-right .dropdown {
+    .add-something {
+        padding: 0;
+        margin: 10px 20px 0 0;
+    }
+}
+
+.border-top {
+    padding-top: 10px;
+    margin-top: 43px;
+    border-top: 1px solid #ddd
+}
+
+.panel-heading {
+    box-shadow: none;
+}
+
+.panel .panel-body {
+    padding: 10px 4px 10px 17px;
+}
+
+.panel-tab .panel-body .tab-content .tab-pane > h4 {
+    margin-bottom: 18px;
+}
+
+.form-bordered {
+    label {
+        font-size: 14px;
+    }
+}
+
+.table-striped {
+    padding: 14px 0 15px;
+    h4 {
+        font-size: 14px;
+        margin: 0 0 20px 14px;
+    }
+}
+
+.text-center .ckbox {
+    margin-right: 0;
+}
+
+.table.-indent>tbody>tr>td,
+.table.-indent>tbody>tr>th,
+.table.-indent>tfoot>tr>td,
+.table.-indent>tfoot>tr>th,
+.table.-indent>thead>tr>td,
+.table.-indent>thead>tr>th {
+    padding: 8px 8px 8px 17px;
+    vertical-align: middle;
+}
+
+.form-horizontal {
+
+    .control-label {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &.-indent {
+        .form-group {
+            margin-bottom: 27px;
+
+            &.mb-21   {margin-bottom: 21px;}
+        }
+    }
+
+    &.-custom {
+        padding-top: 5px;
+        padding-left: 10px;
+
+        .control-label {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+
+        .ckbox, .rdio {
+            margin-top: 11px;
+            font-size: 14px;
+        }
+
+        .ckbox {
+            &:first-child {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.label-heading {
+    padding-left: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.m-0    { margin: 0; }
+
+.-mb-29 { margin-bottom: 29px; }
+
+form .form-group .control-label {
+    margin: 0;
+}
+
+textarea.form-control {
+    height: 86px;
 }
