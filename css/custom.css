@@ -430,7 +430,8 @@ body.page-sidebar-minimize #sidebar-left .sidebar-menu > li.active:hover {
 .form-padding .form-padding .form-group .chosen-container:last-child {
   margin-bottom: 0px !important;
 }
-.ckbox-primary input[type=checkbox]:checked + label::after {
+.ckbox-primary input[type=checkbox]:checked + label::after,
+.rdio-primary input[type=radio]:checked + label::after {
   background-color: #A90329;
 }
 .ckbox-input-wrp {
